@@ -7,7 +7,6 @@ public class Stationnement {
 
 	private final Voiture myCar;
 	private final Garage myGarage;
-
 	private final Date entree = new Date(); // Aujourd'hui
 	private Date fin;
 
@@ -15,7 +14,9 @@ public class Stationnement {
 		myCar = v;
 		myGarage = g;
 	}
-
+	public void setFin(Date fin){
+		this.fin=fin;
+	}
 	public Voiture getCar() {
 		return myCar;
 	}
